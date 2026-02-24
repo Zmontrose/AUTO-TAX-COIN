@@ -1,0 +1,59 @@
+Proposed Architecture (Anchor Version)
+
+If you approve Anchor, this is the structure:
+
+Program Accounts
+
+TokenConfig
+
+owner
+
+tax_percentage
+
+burn_percentage
+
+treasury_wallet
+
+mint
+
+Instructions
+
+initialize
+
+Create token mint
+
+Set tax parameters
+
+Mint initial supply
+
+transfer_with_tax
+
+Deduct tax %
+
+Split:
+
+Burn portion
+
+Treasury portion
+
+Send remainder to recipient
+
+mint_tokens
+
+Owner only
+
+update_tax
+
+Owner only
+
+🔐 Security Considerations
+
+Owner validation
+
+Overflow-safe math
+
+PDA authority for mint
+
+Reentrancy-safe design
+
+Mint authority stored in program

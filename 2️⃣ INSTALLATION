@@ -1,0 +1,14 @@
+2️⃣ INSTALLATION
+
+Install:
+
+cargo install --git https://github.com/coral-xyz/anchor anchor-cli --locked
+solana --version
+
+Set Devnet:
+
+solana config set --url https://api.devnet.solana.com
+3️⃣ BUILD
+anchor build
+4️⃣ DEPLOY
+anchor deploy
